@@ -10,7 +10,7 @@ pipeline {
         IMAGE_REPO_NAME="jenkins-test-repo"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-	registryCredential = "${arn:aws:iam::723959547348:role/ecrregistryfullaccessjenkins}"
+	registryCredential = "demo-admin-user"
     }
    
     stages {
