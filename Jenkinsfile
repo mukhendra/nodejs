@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="723959547348"
+        AWS_ACCOUNT_ID="********"
         AWS_DEFAULT_REGION="us-west-1" 
 	CLUSTER_NAME="test-nodejsdemo"
 	SERVICE_NAME="nodejs-container-service"
@@ -10,7 +10,7 @@ pipeline {
         IMAGE_REPO_NAME="test-demo"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-	registryCredential = "demo-admin-user"
+	registryCredential = "*********"
     }
    
     stages {
