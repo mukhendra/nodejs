@@ -23,7 +23,7 @@ pipeline {
 	  sh 'npm test -- --watchAll=false'
         }
       }
-    }
+    }//
         
     // Building Docker images
     stage('Building image') {
